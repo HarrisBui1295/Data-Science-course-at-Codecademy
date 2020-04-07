@@ -1,0 +1,25 @@
+-- CREATE A TABLE 
+
+CREATE TABLE friends (
+number INTEGER PRIMARY KEY,
+name TEXT UNIQUE,
+birthday DATE NOT NULL,
+nationality TEXT NOT NULL,
+monthly_income INTEGER NOT NULL
+);
+
+INSERT INTO friends VALUES (1, 'HOA', '01/01/1995', 'VIETNAM', 10000);
+INSERT INTO friends VALUES (2, 'CHINH', '06/03/1997', 'USA', 5000);
+INSERT INTO friends VALUES (3, 'KY', '01/02/1997', 'FRANCE', 8500);
+INSERT INTO friends VALUES (4, 'BUI', '25/12/1998', 'CANADA', 7520);
+
+ALTER TABLE friends ADD COLUMN gender TEXT;
+
+UPDATE friends SET gender = 'MALE' WHERE NUMBER = 1;
+UPDATE friends SET gender = 'FEMALE' WHERE NUMBER = 2;
+UPDATE friends SET gender = 'FEMALE' WHERE NUMBER = 3;
+UPDATE friends SET gender = 'MALE' WHERE NUMBER = 4;
+
+DELETE FROM friends WHERE number = 4;
+
+SELECT * FROM FRIENDS;
