@@ -1,4 +1,4 @@
 # Data-Science-course-at-Codecademy
 
-This is all of my works during studying to become a Data Scientist at Codecademy with non-IT background (mostly in Python & SQLite). 
+This is a place where I have been storing all of my recored works during the journey to become a Data Scientist at Codecademy as a brave man with non-IT background (concentrating in Python & SQLite). 
 Thank you for your visit!
