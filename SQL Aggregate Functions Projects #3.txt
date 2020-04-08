@@ -1,0 +1,51 @@
+select * from met limit 5;
+--How many pieces are in the American Decorative Art collection?
+SELECT COUNT(*)
+FROM met;
+
+--Count the number of pieces where the category includes ‘celery’.
+SELECT COUNT(*)
+FROM met
+WHERE category LIKE '%celery%';
+
+--Find the title and medium of the oldest piece(s) in the collection.
+SELECT title, medium, date, COUNT(*)
+FROM met
+GROUP BY title
+ORDER BY date ASC LIMIT 5;
+
+--Find the top 10 countries with the most pieces in the collection.
+SELECT count(*), country
+FROM met
+WHERE country IS NOT NULL
+GROUP BY country
+ORDER BY 1 DESC LIMIT 5;
+
+--Find the categories HAVING more than 100 pieces.
+SELECT category, COUNT(*)
+FROM met
+GROUP BY category
+HAVING COUNT(*) > 100
+ORDER BY COUNT(*) DESC LIMIT 5;
+
+--Count the number of pieces where the medium contains ‘gold’ or ‘silver’. And sort in descending order.
+SELECT COUNT(*) AS 'number of pieces', medium
+FROM met
+WHERE medium like '%gold%' or medium like '%silver%'
+GROUP BY 2
+ORDER BY 1 DESC LIMIT 5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
