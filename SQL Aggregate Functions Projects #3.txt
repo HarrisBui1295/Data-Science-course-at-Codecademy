@@ -34,18 +34,3 @@ FROM met
 WHERE medium like '%gold%' or medium like '%silver%'
 GROUP BY 2
 ORDER BY 1 DESC LIMIT 5;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
