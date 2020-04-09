@@ -45,17 +45,3 @@ SELECT name,
   ELSE 'Poor'
  END AS 'Review'
 FROM nomnom;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
