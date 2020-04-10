@@ -1,0 +1,34 @@
+select * from orders limit 3;
+
+--Use DISTINCT to find out all the unique order_date values in this table.
+SELECT DISTINCT(order_date)
+FROM orders;
+
+--Write a query that selects only the special_instructions column.
+SELECT special_instructions
+FROM orders;
+
+--Edit the query so that we are only returning the special instructions that are not empty?
+SELECT special_instructions
+FROM orders
+WHERE special_instructions IS NOT NULL;
+
+--Let’s search for special instructions that have the word ‘sauce’. Are there any funny or interesting ones?
+SELECT special_instructions
+FROM orders
+WHERE special_instructions LIKE '%sauce%';
+
+--Search for special instructions that have the word ‘door’.
+SELECT special_instructions
+FROM orders
+WHERE special_instructions LIKE '%door%';
+
+--Let’s search for special instructions that have the word ‘box’.
+SELECT special_instructions
+FROM orders
+WHERE special_instructions LIKE '%box%';
+
+--Some of these are marketing gold! But what are their order numbers?
+SELECT id AS '#', special_instructions AS 'Notes'
+FROM orders
+WHERE special_instructions LIKE '%box%';
