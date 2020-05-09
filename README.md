@@ -1,4 +1,4 @@
-# Fundamentals of Data Analysis using SQL & Python
+# Fundamentals of Data Analysis using SQL
 
-This is a place where I have been storing all of my recored works during the journey to become a Data Scientist via Codecademy's  online courses as a brave man with non-IT background. (concentrating in Python & SQLite)
+This is a place where I have been storing all of my recored works during the journey to achieve data analysis skill via Codecademy's  online courses as person with non-IT background.
 Thank you for your visit!
